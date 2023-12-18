@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+body {
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.text-stroke-white {
+	-webkit-text-stroke-color: #ffffff;
+}
+
+.text-stroke {
+	-webkit-text-stroke-width: 1px;
+}
+
+.text-stroke-2 {
+	-webkit-text-stroke-width: 2px;
+}
+
+.text-stroke-3 {
+	-webkit-text-stroke-width: 3px;
+}
+
+.text-stroke-4 {
+	-webkit-text-stroke-width: 4px;
+}
+
+/* .bg-gradient-radial {
+	background-image: radial-gradient(white, #ffffff00);
+} */
+
+.text-mask {
+	-webkit-mask-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 0) 30%,
+		rgba(0, 0, 0, 0) 65%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	mask-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 0) 30%,
+		rgba(0, 0, 0, 0) 65%,
+		rgba(0, 0, 0, 1) 100%
+	);
+}
+
+.text-display {
+	font-family: var(--font-nunito), 'system-ui', 'sans-serif';
+}
+.text-sans {
+	font-family: var(--font-nunito-sans), 'system - ui', 'sans - serif';
+}
